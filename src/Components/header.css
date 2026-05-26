@@ -66,7 +66,11 @@
   margin-right: 10px;
   display: flex;
 }
-
+.orders-link.active {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 2px;
+}
 .header .search-bar {
   flex: 1;
   width: 0;

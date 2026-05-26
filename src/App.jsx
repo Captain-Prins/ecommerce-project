@@ -1,13 +1,16 @@
 import { useState } from 'react'
 import { Homepage } from './Pages/Homepage';
+import { CheckoutPage } from './Pages/CheckoutPage';
+import {OrdersPage} from './Pages/OrdersPage';
 import { Routes, Route } from 'react-router'  
 import './App.css'
 
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<Homepage />} />
-      <Route path="checkout" element={<h1>Checkout Page</h1>} />
+      <Route index element={<Homepage />} />
+      <Route path="checkout" element={<CheckoutPage />} />
+      <Route path="order" element={<OrdersPage />} />
     </Routes>
   )
 }
